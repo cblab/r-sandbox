@@ -12,4 +12,4 @@ unseen <- data.frame(age = 60)
 # Predict the wage for a 60-year old worker
 predict(lm_wage, unseen)
 # 1 
-# 124.1413
+# 124.1413 ($ per day)
