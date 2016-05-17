@@ -7,9 +7,9 @@ library("ISLR")
 lm_wage <- lm(wage ~ age, data = Wage)
 
 # Define data.frame: unseen
-unseen <- data.frame(age = 60)
+unseen <- data.frame(age = 45)
 
-# Predict the wage for a 60-year old worker
+# Predict the wage for a 45-year old worker
 predict(lm_wage, unseen)
 # 1 
-# 124.1413 ($ per day)
+# 113.5322 ($ per day)
