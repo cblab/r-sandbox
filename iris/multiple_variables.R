@@ -37,3 +37,6 @@ boxplot(Sepal.Length~Species, data=iris)
 # Using with() adding “iris$” before variable names is not necessary any longer.
 # the colors (col) and symbols (pch) of points are set to species.
 with(iris, plot(Sepal.Length, Sepal.Width, col=Species, pch=as.numeric(Species)))
+
+# if many point are overlapping jitter() can be used
+plot(jitter(iris$Sepal.Length), jitter(iris$Sepal.Width))
