@@ -75,8 +75,10 @@ table(iris$Species)
 #setosa versicolor  virginica 
 #50         50         50
 
-# visualizing species frequency
+# visualizing species frequency as pie chart
 pie(table(iris$Species))
 
+# visualizing species frequency as bar plot
+barplot(table(iris$Species))
 
 
