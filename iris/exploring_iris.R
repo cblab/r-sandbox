@@ -13,6 +13,15 @@ str(iris)
 dim(iris)
 # [1] 150   5
 
+# show first five observations in the iris data set
+iris[1:5,]
+#Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+#1          5.1         3.5          1.4         0.2  setosa
+#2          4.9         3.0          1.4         0.2  setosa
+#3          4.7         3.2          1.3         0.2  setosa
+#4          4.6         3.1          1.5         0.2  setosa
+#5          5.0         3.6          1.4         0.2  setosa
+
 # show first and last observations in the iris data set
 head(iris)
 #     Sepal.Length Sepal.Width Petal.Length Petal.Width Species
@@ -23,17 +32,8 @@ head(iris)
 #5          5.0         3.6          1.4         0.2    setosa
 #6          5.4         3.9          1.7         0.4    setosa
 
-
+# show the last observations in the iris data set
 tail(iris)
-
-# show first five observations in the iris data set
-iris[1:5,]
-#Sepal.Length Sepal.Width Petal.Length Petal.Width Species
-#1          5.1         3.5          1.4         0.2  setosa
-#2          4.9         3.0          1.4         0.2  setosa
-#3          4.7         3.2          1.3         0.2  setosa
-#4          4.6         3.1          1.5         0.2  setosa
-#5          5.0         3.6          1.4         0.2  setosa
 
 # summarize the iris data set
 summary(iris)
@@ -49,7 +49,7 @@ attributes(iris)
 #$class
 
 quantile(iris$Sepal.Length)
-# 0%  25%  50%  75% 100% 
+# 0%   25%  50%  75%  100%
 # 4.3  5.1  5.8  6.4  7.9 
 
 quantile(iris$Sepal.Length, c(.1, .3, .65))
@@ -80,5 +80,3 @@ pie(table(iris$Species))
 
 # visualizing species frequency as bar plot
 barplot(table(iris$Species))
-
-
