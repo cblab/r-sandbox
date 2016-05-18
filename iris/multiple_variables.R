@@ -31,3 +31,9 @@ aggregate(Sepal.Length ~ Species, summary, data=iris)
 # cumulative distribution), and outliers. The bar in the middle is the median. The box shows the
 # interquartile range (IQR), which is the range between the 75% and 25% observation.
 boxplot(Sepal.Length~Species, data=iris)
+
+
+# A scatter plot can be drawn for two numeric variables with plot() as below.
+# Using with() adding “iris$” before variable names is not necessary any longer.
+# the colors (col) and symbols (pch) of points are set to species.
+with(iris, plot(Sepal.Length, Sepal.Width, col=Species, pch=as.numeric(Species)))
