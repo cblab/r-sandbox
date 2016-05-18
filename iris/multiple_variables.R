@@ -40,3 +40,6 @@ with(iris, plot(Sepal.Length, Sepal.Width, col=Species, pch=as.numeric(Species))
 
 # if many point are overlapping jitter() can be used
 plot(jitter(iris$Sepal.Length), jitter(iris$Sepal.Width))
+
+# pairs() generates a matrix of scatter plots
+pairs(iris)
