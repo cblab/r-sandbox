@@ -30,3 +30,16 @@ attributes(iris)
 #$row.names
 #$class
 
+quantile(iris$Sepal.Length)
+# 0%  25%  50%  75% 100% 
+# 4.3  5.1  5.8  6.4  7.9 
+
+quantile(iris$Sepal.Length, c(.1, .3, .65))
+# 10%  30%  65% 
+# 4.80 5.27 6.20 
+
+# variance
+var(iris$Sepal.Length)
+
+# histogram
+hist(iris$Sepal.Length)
